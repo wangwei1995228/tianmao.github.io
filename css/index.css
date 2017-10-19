@@ -596,13 +596,22 @@ body{
 	background-color: #e71844;
 }
 .pinpai-shangjia li:last-child:hover .shangjia-shuaxin{
-	transform: rotate(360deg);
+	animation: zhuan 1s 1;
+	animation-fill-mode: forwards;
 }
 .pinpai-shangjia li:last-child:hover .shangjia-shuaxin i{
 	color: white;
 }
 .pinpai-shangjia li:last-child:hover .shangjia-zi{
 	color: white;
+}
+@keyframes zhuan{
+	0%{
+		transform: rotate(0);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
 }
 /* 品牌结束 */
 /* 天猫超市开始 */
